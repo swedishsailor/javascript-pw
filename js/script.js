@@ -1,5 +1,4 @@
-let playerInput,
- buttonRock = document.getElementById('button-rock'),
+let buttonRock = document.getElementById('button-rock'),
  buttonPaper = document.getElementById('button-paper'),
  buttonScissors = document.getElementById('button-scissors');
 
@@ -28,7 +27,8 @@ function getMoveName (argMoveId) {
 
 function displayResult(argPlayerMove, argComputerMove) {
     console.log('Wywołano funkcję displayResult z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-    if ((argPlayerMove == 'papier' && argComputerMove == 'kamień') || (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') || (argPlayerMove == 'nożyce' && argComputerMove == 'papier')) {
+    if ((argPlayerMove == 'papier' && argComputerMove == 'kamień') || (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') 
+    || (argPlayerMove == 'nożyce' && argComputerMove == 'papier')) {
         printMessage('Wygrywasz');
     }else if (argComputerMove == argPlayerMove)
     {
